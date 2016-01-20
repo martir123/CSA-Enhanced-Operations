@@ -273,7 +273,7 @@ function getColumnIndexesWithClass( columns, className ) {
                       }
                       /* If its not active then we only show the delete subscription button if the Instance is Canceled and we don't show the Cancel Button*/
                       else {
-                          return "<div class='btn-toolbar' role='toolbar'><div class='btn-group' role='group'>" + makeSubLink(full.DT_RowId) + openInst + modifySub + viewTop + (full.inst_state == "Canceled" ? deleteSub : "") + "</div></div>";
+                          return "<div class='btn-toolbar' role='toolbar'><div class='btn-group' role='group'>" + makeSubLink(full.DT_RowId) + openInst + modifySub + viewTop + (full.inst_state == "Cancelled" ? deleteSub : "") + "</div></div>";
                       }
                   }
               }, {
